@@ -42,7 +42,7 @@ const PyramidScale = () => {
 
     return (
         <View style={styles.topContainer}>
-            {level != undefined ? <Text style={styles.textStyle}>{getFrustrationLevel()}</Text> : null}
+            {level != undefined ? <Text testID="level" style={styles.textStyle}>{getFrustrationLevel()}</Text> : null}
             {renderChildren()}
         </View>
     )

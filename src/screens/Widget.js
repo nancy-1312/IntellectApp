@@ -21,10 +21,11 @@ const Widget = () => {
                 />
             }
             <TouchableOpacity
+                testID='button'
                 style={styles.buttonStyle}
                 onPress={() => setSelectedIndex(selectedIndex ? 0 : 1)}
             >
-                <Text style={styles.buttonText}>{!selectedIndex ? 'Next' : 'Back'}</Text>
+                <Text testID='buttonText' style={styles.buttonText}>{!selectedIndex ? 'Next' : 'Back'}</Text>
             </TouchableOpacity>
         </View>
     );
